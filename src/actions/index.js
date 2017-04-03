@@ -5,7 +5,7 @@ const API_KEY = '566595743acad5748478bb55b4f4bcb3';
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 
 export function fetchWeather(city) {
-  const url = `api.openweathermap.org/data/2.5/forecast?q=${city},us&appid=${API_KEY}`;
+  const url = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q=${city},us&appid=${API_KEY}`;
   const request = axios.get(url);
 
   return {

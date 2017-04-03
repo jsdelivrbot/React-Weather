@@ -22785,7 +22785,7 @@
 	var FETCH_WEATHER = exports.FETCH_WEATHER = 'FETCH_WEATHER';
 
 	function fetchWeather(city) {
-	  var url = 'api.openweathermap.org/data/2.5/forecast?q=' + city + ',us&appid=' + API_KEY;
+	  var url = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q=' + city + ',us&appid=' + API_KEY;
 	  var request = _axios2.default.get(url);
 
 	  return {
